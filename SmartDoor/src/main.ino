@@ -1,3 +1,4 @@
+#include <Arduino.h>
 #include "FingerprintDoor.h"
 
 void setup() {
