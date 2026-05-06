@@ -95,55 +95,6 @@ The **Blynk dashboard** provides remote monitoring and control:
 | Remote Control | Blynk IoT platform (WiFi) |
 | Libraries | Adafruit Fingerprint, MFRC522 (RFID), Keypad, LiquidCrystal I2C, BlynkSimpleEsp32 |
 
----
 
-## 🚀 Getting Started
 
-### 1. Flash ESP32 Firmware
 
-Open `SmartDoor/src/` in Arduino IDE or PlatformIO. Configure the following in the source file:
-
-```cpp
-#define BLYNK_AUTH_TOKEN "your_blynk_token"
-char ssid[] = "your_wifi_ssid";
-char pass[] = "your_wifi_password";
-```
-
-Then flash to the ESP32 DevKit board.
-
-### 2. Setup Blynk App
-
-- Create a new project in the **Blynk IoT** app
-- Add widgets: **LED** (V0 - locking status), **Button** (V1 - unlock), **Button** (V2 - log request), **Terminal** (V3 - event log)
-- Copy the Auth Token into the firmware
-
-### 3. Enroll Fingerprints & RFID Cards
-
-- Use the enrollment mode (defined in firmware) to register fingerprints and RFID cards
-- Default PIN can be set in `SmartDoor/src/`
-
----
-
-## 📁 Project Structure
-
-```
-├── Image/                  # Hardware photos and diagrams
-│   ├── hardware.jpg
-│   ├── system_diagram.jpg
-│   └── blynk.jpg
-├── SmartDoor/
-│   └── src/                # ESP32 firmware (Arduino/PlatformIO)
-└── README.md
-```
-
----
-
-## 👥 Team
-
-**Nhóm 06** — Embedded Systems & IoT Project
-
----
-
-## 📄 License
-
-This project is developed for educational purposes.
